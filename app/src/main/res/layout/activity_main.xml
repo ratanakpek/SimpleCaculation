@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edDisplayValue"
+        style="@style/titleDisplay"
+        android:text="0" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        tools:context="rpek.simplecaculation.MainActivity">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAC"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/btnPlusMinus"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/defaultYellow"
+                android:onClick="callEventOperation"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSeven"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btnEight"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnMulti"
+                style="@style/defaultYellow"
+                android:onClick="callEventOperation"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFour"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btnFive"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btnSix"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/defaultYellow"
+                android:onClick="callEventOperation"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOne"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btnThree"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/defaultYellow"
+                android:onClick="callEventOperation"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnZero"
+                style="@style/defaultButton"
+                android:layout_span="2"
+                android:onClick="callEventCal"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/defaultButton"
+                android:onClick="callEventCal"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/defaultYellow"
+                android:onClick="callEventEqual"
+                android:text="=" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
